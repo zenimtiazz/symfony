@@ -16,7 +16,7 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], [], []],
     'learning' => [[], ['_controller' => 'App\\Controller\\LearningController::index'], [], [['text', '/learning']], [], [], []],
-    'about' => [[], ['_controller' => 'App\\Controller\\LearningController::about'], [], [['text', '/about']], [], [], []],
+    'about' => [[], ['_controller' => 'App\\Controller\\LearningController::about'], [], [['text', '/about-becode']], [], [], []],
     'showMyName' => [[], ['_controller' => 'App\\Controller\\LearningController::showMyName'], [], [['text', '/']], [], [], []],
     'changeMyName' => [[], ['_controller' => 'App\\Controller\\LearningController::changeMyName'], [], [['text', '/changeMyName']], [], [], []],
 ];

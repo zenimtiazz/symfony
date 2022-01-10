@@ -14,7 +14,7 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/learning' => [[['_route' => 'learning', '_controller' => 'App\\Controller\\LearningController::index'], null, null, null, false, false, null]],
-        '/about' => [[['_route' => 'about', '_controller' => 'App\\Controller\\LearningController::about'], null, null, null, false, false, null]],
+        '/about-becode' => [[['_route' => 'about', '_controller' => 'App\\Controller\\LearningController::about'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'showMyName', '_controller' => 'App\\Controller\\LearningController::showMyName'], null, null, null, false, false, null]],
         '/changeMyName' => [[['_route' => 'changeMyName', '_controller' => 'App\\Controller\\LearningController::changeMyName'], null, ['POST' => 0], null, false, false, null]],
     ],
