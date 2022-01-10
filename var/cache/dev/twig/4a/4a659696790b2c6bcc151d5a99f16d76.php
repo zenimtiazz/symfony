@@ -77,7 +77,7 @@ class __TwigTemplate_87a6fac163befb8fb36178cd0182651a extends Template
         <input type=\"text\" id=\"name\" name=\"name\" value=\"\"><br><br>
         <input class=\"btn btn-primary\" type=\"submit\" value=\"Submit\">
     </form>
-    <br>
+
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -135,7 +135,7 @@ class __TwigTemplate_87a6fac163befb8fb36178cd0182651a extends Template
         <input type=\"text\" id=\"name\" name=\"name\" value=\"\"><br><br>
         <input class=\"btn btn-primary\" type=\"submit\" value=\"Submit\">
     </form>
-    <br>
+
 {% endblock %}
 
 {% block title %}

@@ -73,15 +73,15 @@ class __TwigTemplate_270fb9e744b5d197e90c64b9e3950b8a extends Template
                     ";
         // line 21
         $this->displayBlock('menu', $context, $blocks);
-        // line 23
+        // line 26
         echo "                </nav>
 
             </div>
         </header>
         ";
-        // line 27
+        // line 30
         $this->displayBlock('body', $context, $blocks);
-        // line 28
+        // line 31
         echo "    </body>
 </html>
 ";
@@ -169,7 +169,15 @@ class __TwigTemplate_270fb9e744b5d197e90c64b9e3950b8a extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "menu"));
 
         // line 22
-        echo "                    ";
+        echo "                    <a class=\"nav-item nav-link active\" href=\"";
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("showMyName");
+        echo "\">Home</a> &nbsp;&nbsp;
+                    <a class=\"nav-item nav-link\" href=\"";
+        // line 23
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("about");
+        echo "\">About</a>
+
+                    ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -178,7 +186,7 @@ class __TwigTemplate_270fb9e744b5d197e90c64b9e3950b8a extends Template
 
     }
 
-    // line 27
+    // line 30
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -203,7 +211,7 @@ class __TwigTemplate_270fb9e744b5d197e90c64b9e3950b8a extends Template
 
     public function getDebugInfo()
     {
-        return array (  182 => 27,  172 => 22,  162 => 21,  149 => 13,  139 => 12,  126 => 9,  116 => 8,  97 => 5,  85 => 28,  83 => 27,  77 => 23,  75 => 21,  67 => 15,  65 => 12,  62 => 11,  59 => 8,  54 => 5,  48 => 1,);
+        return array (  190 => 30,  177 => 23,  172 => 22,  162 => 21,  149 => 13,  139 => 12,  126 => 9,  116 => 8,  97 => 5,  85 => 31,  83 => 30,  77 => 26,  75 => 21,  67 => 15,  65 => 12,  62 => 11,  59 => 8,  54 => 5,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -229,6 +237,9 @@ class __TwigTemplate_270fb9e744b5d197e90c64b9e3950b8a extends Template
             <div class=\"col-1\">
                 <nav class=\"navbar nav-pills flex-column sidenav\">
                     {% block menu %}
+                    <a class=\"nav-item nav-link active\" href=\"{{ path('showMyName') }}\">Home</a> &nbsp;&nbsp;
+                    <a class=\"nav-item nav-link\" href=\"{{ path('about') }}\">About</a>
+
                     {% endblock %}
                 </nav>
 
